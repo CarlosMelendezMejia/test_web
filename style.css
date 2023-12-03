@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .greetings {
@@ -13,7 +16,7 @@
 
 .create-todo {
     background-color: green;
-    height: 100vh;
+    height: 66vh;
     padding: 1rem 3rem;
 }
 
@@ -31,15 +34,25 @@
     background-color: cadetblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .option {
     background-color: blueviolet;
     margin: 0.5rem;
-    
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.option input,label{
+.option input,label {
     display: block;
+    margin-top: 0.5rem;
+}
+
+.todo-list {
+    background-color: brown;
+    height: min-content;
+    padding: 1rem 3rem;
 }

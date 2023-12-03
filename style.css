@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.greetings {
+    background-color: red;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-todo {
+    background-color: green;
+    height: 100vh;
+    padding: 1rem 3rem;
+}
+
+.input-container {
+    background-color: yellow;
+    margin-top: 2rem;
+}
+
+.question {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.options {
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.option {
+    background-color: blueviolet;
+    margin: 0.5rem;
+    
+}
+
+.option input,label{
+    display: block;
+}

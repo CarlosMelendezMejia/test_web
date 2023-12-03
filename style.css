@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root {
+    --gray4 : #D0A2F7;
+    --gray3 : #DCBFFF;
+    --gray2 : #E5D4FF;
+    --gray1 : #F1EAFF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -55,4 +62,10 @@
     background-color: brown;
     height: min-content;
     padding: 1rem 3rem;
+}
+
+.button-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
 }

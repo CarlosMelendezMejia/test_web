@@ -8,15 +8,23 @@
 
     --work-soft: #4bfa9d;
     --work: #37E2D5;
+    --work-glow: #00ffea;
     --study-soft: #9f4bdb;
     --study: #590696;
+    --study-glow: #c400ff;
     --personal-soft: #fa55bc;
     --personal: #C70A80;
+    --personal-glow: #ff00e6;
     --miscelanious-soft: #edcc4a;
     --miscelanious: #bd9702;
+    --miscelanious-glow: #ffea00;
+    --all: #a2a2a2;
+    --all-glow: #e2e2e2;
 
     --confirm: #19ab09;
+    --confirm-glow: #00ff00;
     --eliminate: #ab0909;
+    --eliminate-glow: #ff0000;
     --edit: #d6760f;
 }
 
@@ -31,6 +39,7 @@ button {
     cursor: pointer;
     background: none;
     border: none;
+    margin-top: 0.5rem;
 }
 
 input {
@@ -109,6 +118,96 @@ body {
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.logout, .delete{
+    background-color: var(--eliminate);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.logout:hover, .delete:hover{
+    background-color: var(--eliminate-glow);
+    box-shadow: 0 0 0.5rem var(--eliminate-glow);
+    scale: 1.1;
+}
+
+.check{
+    background-color: var(--confirm);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.check:hover{
+    background-color: var(--confirm-glow);
+    box-shadow: 0 0 0.5rem var(--confirm-glow);
+    scale: 1.1;
+}
+
+#work-button {
+    background-color: var(--work);
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#work-button:hover {
+    background-color: var(--work-glow);
+    box-shadow: 0 0 0.5rem var(--work-glow);
+}
+
+#study-button {
+    background-color: var(--study);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#study-button:hover {
+    background-color: var(--study-glow);
+    box-shadow: 0 0 0.5rem var(--study-glow);
+}
+
+#personal-button {
+    background-color: var(--personal);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#personal-button:hover {
+    background-color: var(--personal-glow);
+    box-shadow: 0 0 0.5rem var(--personal-glow);
+}
+
+#miscelanious-button {
+    background-color: var(--miscelanious);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#miscelanious-button:hover {
+    background-color: var(--miscelanious-glow);
+    box-shadow: 0 0 0.5rem var(--miscelanious-glow);
+    color: black;
+}
+
+#all-button {
+    background-color: var(--all);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#all-button:hover {
+    background-color: var(--all-glow);
+    box-shadow: 0 0 0.5rem var(--all-glow);
+    color: black;
 }
 
 .todo {

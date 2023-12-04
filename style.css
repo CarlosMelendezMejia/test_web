@@ -5,6 +5,19 @@
     --gray3 : #DCBFFF;
     --gray2 : #E5D4FF;
     --gray1 : #F1EAFF;
+
+    --work-soft: #4bfa9d;
+    --work: #37E2D5;
+    --study-soft: #9f4bdb;
+    --study: #590696;
+    --personal-soft: #fa55bc;
+    --personal: #C70A80;
+    --miscelanious-soft: #edcc4a;
+    --miscelanious: #bd9702;
+
+    --confirm: #19ab09;
+    --eliminate: #ab0909;
+    --edit: #d6760f;
 }
 
 * {
@@ -14,22 +27,43 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+    width: 14rem;
+}
+
+body {
+    background-color: var(--gray3);
+}
+
 .greetings {
-    background-color: red;
-    padding: 0.8rem 3rem 0.8rem 3rem;
+    /* background-color: red; */
+    background-color: var(--gray4);
+    padding: 3rem 3rem 0.8rem 3rem;
     display: flex;
     justify-content: space-between;
 }
 
 .create-todo {
-    background-color: green;
-    height: 66vh;
-    padding: 1rem 3rem;
+    /* background-color: green; */
+    height: 70vh;
+    padding: 0rem 3rem;
 }
 
 .input-container {
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-color: var(--gray1);
     margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1vh;
 }
 
 .question {
@@ -38,19 +72,25 @@
 }
 
 .options {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-area: auto;
+    margin-top: 1.2rem;
+    width: auto;
 }
 
+
 .option {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-color: var(--gray1);
     margin: 0.5rem;
     padding: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-width: 1rem;
 }
 
 .option input,label {
@@ -59,7 +99,7 @@
 }
 
 .todo-list {
-    background-color: brown;
+    /* background-color: brown; */
     height: min-content;
     padding: 1rem 3rem;
 }
@@ -68,4 +108,27 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.todo {
+    height: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem;
+}
+
+.work-todo {
+    background-color: var(--work);
+}
+
+.study-todo {
+    background-color: var(--study);
+}
+
+.personal-todo {
+    background-color: var(--personal);
+}
+
+.miscelanious-todo {
+    background-color: var(--miscelanious);
 }

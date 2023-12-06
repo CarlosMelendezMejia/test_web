@@ -264,10 +264,28 @@ main {
 
 .todo-wrap-a {
     background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
 }
 
 .todo-wrap-b {
     background-color: blue;
+}
+
+.title-container {
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-container {
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
 }
 
 @media (max-width:768px) {
@@ -277,4 +295,12 @@ main {
         gap: 1rem;
         min-height: 30rem;
     }
+}
+
+.todo-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    text-align: center;
 }

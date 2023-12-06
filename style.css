@@ -77,11 +77,19 @@ main {
     align-items: center;
     justify-content: space-between;
     min-height: 5rem;
-    width: auto;
+    width: 100%;
     box-shadow: var(--gray5) 0px 0px 10px 0px;
+    position: fixed;
+}
+
+#input-name {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-left: 0.2rem;
 }
 
 .create-todo {
+    margin-top: 5rem;
     padding: 3rem 3rem 0.2rem 3rem;
     min-height: 35rem;
 
@@ -368,6 +376,7 @@ main {
 }
 
 .todo-button-container {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -376,4 +385,46 @@ main {
 
 .todo, .title-container, .contain-container, .todo-dueDate-container, .todo-button-container {
     border-radius: 0.8rem;
+}
+
+.check-todo {
+    background-color: var(--confirm);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.check-todo:hover {
+    background-color: var(--confirm-glow);
+    box-shadow: 0 0 0.5rem var(--confirm-glow);
+    scale: 1.1;
+}
+
+.delete-todo {
+    background-color: var(--eliminate);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.delete-todo:hover {
+    background-color: var(--eliminate-glow);
+    box-shadow: 0 0 0.5rem var(--eliminate-glow);
+    scale: 1.1;
+}
+
+.edit-todo {
+    background-color: var(--edit);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.edit-todo:hover {
+    background-color: var(--edit-glow);
+    box-shadow: 0 0 0.5rem var(--edit-glow);
+    scale: 1.1;
 }

@@ -9,15 +9,19 @@
     --gray2: #E5D4FF;
     --gray1: #F1EAFF;
 
+    --work-softer: #8a9ecf;
     --work-soft: #4c7ecf;
     --work: #1a53ad;
     --work-glow: #87b5ff;
+    --study-softer: #c87aff;
     --study-soft: #9f4bdb;
     --study: #590696;
     --study-glow: #c400ff;
+    --personal-softer: #ff9f9f;
     --personal-soft: #fa55bc;
     --personal: #C70A80;
     --personal-glow: #ff00e6;
+    --miscelanious-softer: #f7d97f;
     --miscelanious-soft: #edcc4a;
     --miscelanious: #bd9702;
     --miscelanious-glow: #ffea00;
@@ -247,13 +251,59 @@ main {
 }
 
 .todos-wrap {
-    background-color: orange;
     min-height: 20rem;
     width: auto;
 }
 
+.work-todo {
+    background-color: var(--work);
+}
+
+.soft-work{
+    background-color: var(--work-soft);
+}
+
+.softer-work{
+    background-color: var(--work-softer);
+}
+
+.study-todo {
+    background-color: var(--study);
+}
+
+.soft-study{
+    background-color: var(--study-soft);
+}
+
+.softer-study{
+    background-color: var(--study-softer);
+}
+
+.personal-todo {
+    background-color: var(--personal);
+}
+
+.soft-personal{
+    background-color: var(--personal-soft);
+}
+
+.softer-personal{
+    background-color: var(--personal-softer);
+}
+
+.miscelanious-todo {
+    background-color: var(--miscelanious);
+}
+
+.soft-miscelanious{
+    background-color: var(--miscelanious-soft);
+}
+
+.softer-miscelanious{
+    background-color: var(--miscelanious-softer);
+}
+
 .todo {
-    background-color: gray;
     min-height: 20rem;
     margin-bottom: 2rem;
     padding: 1rem;
@@ -263,25 +313,24 @@ main {
 }
 
 .todo-wrap-a {
-    background-color: red;
     display: grid;
     grid-template-rows: 1fr 3fr;
     gap: 1rem;
 }
 
 .todo-wrap-b {
-    background-color: blue;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
 }
 
 .title-container {
-    background-color: greenyellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contain-container {
-    background-color: coral;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -303,4 +352,28 @@ main {
     font-weight: bolder;
     letter-spacing: 0.2rem;
     text-align: center;
+}
+
+.dueDate {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.todo-dueDate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo, .title-container, .contain-container, .todo-dueDate-container, .todo-button-container {
+    border-radius: 0.8rem;
 }
